@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# ── 绝不提交：密钥与运行时产物 ──
+config.json
+captures/
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.log
+*.lock
+.env
+.env.*
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

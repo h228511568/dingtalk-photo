@@ -1,0 +1,13 @@
+# dingtalk-photo 的 DSH 插件装配层
+#
+# 作为 bundle 安装时，这个 patch 会把插件入口挂进 profile：
+#   id 是这个插件在 Loader 里的地址，name 是包名（安装后由 profile 的 node_modules 解析）。
+#
+# 安装方式（在 Creator 模式下，或按 DSH 的插件管理流程）：
+#   用 plugin_manager 的 install_bundle，target 指向本仓库的绝对路径。
+#
+# 只想当技能用的话，不需要这个文件——直接 clone 到 skills 目录即可。
+
+- insert:
+    - id: dingtalk-photo
+      name: 'dingtalk-photo'

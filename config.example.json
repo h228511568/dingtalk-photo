@@ -1,0 +1,15 @@
+{
+  "_说明": "复制本文件为 config.json 并填写真实值。config.json 已在 .gitignore 中，不会被误提交。",
+  "_推荐": "或者放一份到 ~/.dsh/dingtalk-photo.json，让密钥完全离开仓库目录。",
+
+  "clientId": "dingxxxxxxxxxxxxxxxx",
+  "clientSecret": "你的 AppSecret",
+
+  "_allowedSenders说明": "接收人的钉钉 userId 列表。想知道自己的 staffId，可先给机器人发一条任意消息，桥接日志里会打印 from=<staffId>",
+  "allowedSenders": [
+    "你的 staffId"
+  ],
+
+  "_agentId说明": "可选。仅当你要调用旧版接口时才需要，本工具发图走机器人接口，不依赖它。",
+  "agentId": ""
+}

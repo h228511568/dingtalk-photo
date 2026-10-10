@@ -1,0 +1,35 @@
+{
+  "name": "dingtalk-photo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "用电脑摄像头拍照并发到钉钉；也可发送文本 / Markdown / 图片。既是 DeepSeek Harness 技能，也是它的插件。",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./scripts/notify.mjs": "./scripts/notify.mjs",
+    "./scripts/take-photo.mjs": "./scripts/take-photo.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "list-cameras": "node scripts/take-photo.mjs --list-cameras",
+    "photo": "node scripts/take-photo.mjs",
+    "text": "node scripts/notify.mjs text"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-skill",
+    "dsh-plugin",
+    "dingtalk",
+    "webcam",
+    "ffmpeg"
+  ]
+}
